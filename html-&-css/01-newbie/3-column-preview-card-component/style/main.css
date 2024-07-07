@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* ------ Color Neutral ------ */
+    /* (paragraphs) */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    /* ------ Fonte ------ */
+    --font-principal: 'Lexend Deca', sans-serif;
+    --font-p-w: 400;
+    --font-title: 'Big Shoulders Display', sans-serif;
+    --font-t-w: 700;
+    --font-m: 0.9375rem;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+}
+
+/* ------ Principal ------ */
+body {
+    background: var(--very-light-gray);
+    font-family: var(--font-principal);
+    font-size: var(--font-m);
+    font-weight: var(--font-p-w);
+    color: var(--transparent-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 18rem 0 18rem 0;
+}
+
+/* ------ Conteúdo Sedans------ */
+.container__orange {
+    height: 21.625rem;
+    width: 14.0625rem;
+    background: var(--bright-orange);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px 10px 0 0;
+    padding: 3rem 3.1875rem;
+}
+
+.container__orange div {
+    background-image: url(../images/icon-sedans.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.625rem;
+    width: 4.125rem;
+}
+
+.container__orange h2 {
+    font-family: var(--font-title);
+    font-weight: var(--font-t-w);
+    color: var(--very-light-gray);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 2.4rem;
+}
+
+.container__orange p {
+    opacity: 0.8;
+    margin-top: 1.9rem;
+    line-height: 1.5rem;
+}
+
+.container__orange button {
+    height: 3rem;
+    width: 9rem;
+    background-color: var(--very-light-gray);
+    color: var(--bright-orange);
+    border: none;
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    border-radius: 1.5625rem;
+    margin-top: 1.7rem;
+}
+
+/* ------ Conteúdo Suv------ */
+.container__cyan {
+    height: 21.625rem;
+    width: 14.0625rem;
+    background: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 3.1875rem;
+}
+
+.container__cyan div {
+    background-image: url(../images/icon-suvs.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.625rem;
+    width: 4.125rem;
+}
+
+.container__cyan h2 {
+    font-family: var(--font-title);
+    font-weight: var(--font-t-w);
+    color: var(--very-light-gray);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 2.4rem;
+}
+
+.container__cyan p {
+    opacity: 0.8;
+    margin-top: 1.9rem;
+    line-height: 1.5rem;
+}
+
+.container__cyan button {
+    height: 3rem;
+    width: 9rem;
+    background-color: var(--very-light-gray);
+    color: var(--dark-cyan);
+    border: none;
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    border-radius: 1.5625rem;
+    margin-top: 1.7rem;
+}
+
+/* ------ Conteúdo Luxury------ */
+.container__green {
+    height: 21.625rem;
+    width: 14.0625rem;
+    background: var(--very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0 0 10px 10px;
+    padding: 3rem 3.1875rem;
+}
+
+.container__green div {
+    background-image: url(../images/icon-luxury.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.625rem;
+    width: 4.125rem;
+}
+
+.container__green h2 {
+    font-family: var(--font-title);
+    font-weight: var(--font-t-w);
+    color: var(--very-light-gray);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 2.4rem;
+}
+
+.container__green p {
+    opacity: 0.8;
+    margin-top: 1.9rem;
+    line-height: 1.5rem;
+}
+
+.container__green button {
+    height: 3rem;
+    width: 9rem;
+    background-color: var(--very-light-gray);
+    color: var(--very-dark-cyan);
+    border: none;
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    border-radius: 1.5625rem;
+    margin-top: 1.7rem;
+}
+
+/* ------ Botão Hover------ */
+.container__orange button:hover {
+    cursor: pointer;
+    background: transparent;
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+.container__cyan button:hover {
+    cursor: pointer;
+    background: transparent;
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+.container__green button:hover {
+    cursor: pointer;
+    background: transparent;
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+/* ------ Responsivo 1440px ------ */
+@media only screen and (min-width: 1440px) {
+    body{
+        flex-direction: row;
+        margin: unset;
+    }
+
+    .container__orange{
+        height: 25.625rem;
+        width: 12.1875rem;
+        padding: 2.8125rem 3.625rem;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .container__cyan{
+        height: 25.625rem;
+        width: 12.1875rem;
+        padding: 2.8125rem 3.625rem;
+        border-radius: 0;
+    }
+
+    .container__green{
+        height: 25.625rem;
+        width: 13rem;
+        padding: 2.8125rem 2.8125rem;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .container__orange button {
+        margin-top: 5.375rem;
+    }
+
+    .container__cyan button {
+        margin-top: 5.375rem;
+    }
+
+    .container__green button {
+        margin-top: 5.375rem;
+    }
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--very-dark-cyan);
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
