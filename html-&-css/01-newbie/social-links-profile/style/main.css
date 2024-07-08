@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --green: hsl(75, 94%, 57%);
+
+    /* ------ Color Neutral ------ */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+    /* ------ Font ------ */
+    --font-regular: 400;
+    --font-semiBold: 600;
+    --font-bold: 700;
+    --font-inter: 'Inter', sans-serif;
+    --font-size: 14px;
+}
+
+/* ------ Principal ------ */
+body {
+    background: var(--off-black);
+    font-size: var(--font-size);
+    font-weight: var(--font-regular);
+    font-family: var(--font-inter);
+    color: var(--white);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 530px;
+    width: 280px;
+    padding: 25px;
+    background: var(--dark-grey);
+    border-radius: 10px;
+}
+
+/* ------ Card ------ */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo{
+    background-image: url(../assets/images/avatar-jessica.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.card h1{
+    font-size: 20px;
+    font-weight: var(--font-semiBold);
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.card h2{
+    font-weight: var(--font-semiBold);
+    color: var(--green);
+    margin-top: 18px;
+}
+
+.card p{
+    margin-top: 30px;
+}
+
+/* ------ Btn ------ */
+.btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.btn button{
+    background: var(--grey);
+    height: 45px;
+    width: 280px;
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: var(--font-bold);
+}
+
+/* ------ Hover ------ */
+.btn button:hover{
+    background: var(--green);
+    cursor: pointer;
+    color: var(--dark-grey);
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.attribution a {
+    color: var(--white);
+}
+
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 390px) {
+
+    /* ------ Principal ------ */
+    .container {
+        height: 530px;
+        width: 300px;
+        padding: 40px;
+    }
+   
+    .btn button{
+        height: 47px;
+        width: 300px;
+    }
+}
