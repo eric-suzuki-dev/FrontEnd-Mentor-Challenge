@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    /* -------- fonte --------  */
+    --font-principal: 'Montserrat', sans-serif;
+    --font-estilo: 'Fraunces', serif;
+    --font-m: 0.875rem;
+
+    /* -------- Color Primary HSL-------- */
+    --dark-cyan: 158, 36%, 37%;
+    --cream: 30, 38%, 92%;
+
+    /* -------- Color Neutral HSL-------- */
+    --very-dark-blue: 212, 21%, 14%;
+    --dark-grayish-blue: 228, 12%, 48%;
+    --White: 0, 0%, 100%;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 28, 45%, 44%;
+
+    /* -------- Tamanho da Tabela - Mobile -------- */
+    --table-m-h: 41.6875rem;
+    --table-m-w: 23.4375rem;
+}
+
+
+
+body {
+    font-size: var(--font-m);
+    color: hsl(var(--very-dark-blue));
+    font-family: var(--font-principal);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background: hsl(var(--cream));
+    height: var(--table-m-h);
+    width: var(--table-m-w);
+}
+
+/* -------- Imagem -------- */
+
+.perfurme {
+    display: flex;
+    justify-content: center;
+}
+
+.perfurme img {
+    width: 21.375rem;
+    height: 15rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+    margin-top: 1.75rem;
+}
+
+/* -------- Descrição -------- */
+
+.description {
+    background: hsl(var(--White));
+    height: 23.25rem;
+    margin: 0 1rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.description__detalhe h1 {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: hsl(var(--dark-grayish-blue));
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin: 1.75rem 0 1.25rem 1.75rem;
+}
+
+.description__detalhe h2 {
+    font-family: var(--font-estilo);
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 0 1rem 1.75rem;
+}
+
+.description__detalhe p {
+    font-weight: 500;
+    color: hsl(var(--dark-grayish-blue));
+    line-height: 1.2rem;
+    margin: 0 1.4rem 0.5rem 1.5rem;
+}
+
+/* -------- Preço -------- */
+
+.description__price {
+    display: flex;
+    align-items: center;
+}
+
+.description__price .discount {
+    font-family: var(--font-estilo);
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(var(--dark-cyan));
+    margin: 1rem 0 0 1.75rem;
+}
+
+.description__price .price {
+    font-weight: 500;
+    color: hsl(var(--dark-grayish-blue));
+    text-decoration: line-through;
+    margin: 1rem 0 0 1.75rem;
+}
+
+/* -------- Botão -------- */
+
+.btn {
+    /* width: 18.438rem; */
+    padding: 1rem;
+    border: none;
+    background: hsl(var(--dark-cyan));
+    color: hsl(var(--White));
+    font-weight: 700;
+    font-family: var(--font-principal);
+    left: 1px;
+    border-radius: 10px;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn img {
+    margin-right: 0.8rem;
+}
+
+.btn:hover {
+    background: hsl(159, 51%, 15%);
+}
+
+/* -------- Attribution -------- */
+
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
+
+/* -------- Responsividade para desktop 1440px -------- */
+
+@media screen and (min-width: 600px) {
+
+    body {
+        background: hsl(var(--cream));
+    }
+
+    .container {
+        all: unset;
+        display: grid;
+        grid-template:
+            'perfume description';
+    }
+
+    .perfurme {
+        grid-area: perfume;
+    }
+
+    .perfurme img {
+        width: 18.75rem;
+        height: 28.125rem;
+        content: url('../images/image-product-desktop.jpg');
+        border-radius: 10px 0 0 10px;
+        margin: 0;
+    }
+
+    .description {
+        grid-area: description;
+        width: 18.75rem;
+        height: 28.125rem;
+        margin: 0;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .description__detalhe h1 {
+        font-size: var(--font-m);
+    }
+
+    .description__detalhe h2 {
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+    }
+
+    .description__detalhe p {
+        font-size: 0.9375rem;
+        line-height: 1.5rem;
+    }
+}
