@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+
+    /* -------- Color -------- */
+    --White: 0, 0%, 100%;
+    --light-gray: 212, 45%, 89%;
+    --grayish-blue: 220, 15%, 55%;
+    --dark-blue: 218, 44%, 22%;
+
+    --color-attribution: 228, 45%, 44%;
+
+    /* -------- Fonte -------- */
+    --font-m: 0.9375rem;
+    --font-principal: 'Outfit', sans-serif;
+
+}
+
+body {
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: var(--font-m);
+    color: hsl(var(--grayish-blue));
+    background-color: hsl(var(--light-gray));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 31.0365rem;
+    width: 20rem;
+    background: hsl(var(--White));
+    border-radius: 0.625rem;
+}
+
+/* -------- Imagem QR CODE -------- */
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image img{
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.625rem;
+    margin: 1rem;
+}
+
+/* -------- Descrição -------- */
+
+.description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description h2{
+    color: hsl(var(--dark-blue));
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0.6rem 2.1rem;
+    line-height: 1.6rem;   
+}
+
+.description p{
+    text-align: center;
+    margin: 0.6rem 2.25rem;
+    line-height: 1.1rem;   
+}
+
+/* -------- Attribution -------- */
+
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
