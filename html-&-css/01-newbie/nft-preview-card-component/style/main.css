@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+    /* -------- Primary -------- */
+    --Soft-blue: 215, 51%, 70%;
+    --Cyan: 178, 100%, 50%;
+
+    /* -------- Neutral -------- */
+    --dark-blue-main-bg: 217, 54%, 11%;
+    --dark-blue-card-bg: 216, 50%, 16%;
+    --dark-blue-line: 215, 32%, 27%;
+    --white: 0, 0%, 100%;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+
+    /* -------- fONTE -------- */
+    --fonte-principal: 'Outfit', sans-serif;
+    --fonte-m: 1.125rem;
+}
+
+body {
+    background: hsl(var(--dark-blue-main-bg));
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-m);
+    font-weight: 300;
+    color: hsl(var(--Soft-blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* -------- Conteúdo -------- */
+.container {
+    background-color: hsl(var(--dark-blue-card-bg));
+    height: 30.9375rem;
+    width: 17.4375rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4375rem;
+    border-radius: 15px;
+}
+
+/* -------- Imagem -------- */
+.container_image {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    
+}
+
+.equilibrium {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.overlay_color {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:hsl(var(--Cyan));
+    border-radius: 15px;
+}
+
+.overlay_image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+}
+
+/* -------- Descrição -------- */
+.description h1 {
+    color: hsl(var(--white));
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+}
+
+.description p {
+    margin-top: 1rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+/* -------- Descrição Tempo -------- */
+.description .tempo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description .tempo h2 {
+    color: hsl(var(--Cyan));
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.5px;
+}
+
+.description .tempo h2 img {
+    margin-right: 0.5rem;
+}
+
+.description .tempo p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.description .tempo p img {
+    margin-right: 0.2rem;
+}
+
+/* -------- Linha -------- */
+.description hr {
+    border: none;
+    border-top: 1px solid hsl(var(--dark-blue-line));
+    margin-top: 0.8rem;
+}
+
+/* -------- Descrição Autor -------- */
+.description .autor {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.description .autor img {
+    width: 2rem;
+    height: 2rem;
+    border: 0.5px solid hsl(var(--white));
+    border-radius: 50%;
+}
+
+.description .autor p {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 0;
+    letter-spacing: -0.5px;
+}
+
+.description .autor a {
+    color: hsl(var(--white));
+    text-decoration: none;
+    margin-left: 0.2rem;
+}
+
+/* -------- Houver -------- */
+
+.container_image:hover {
+    cursor: pointer;
+}
+.container_image:hover .overlay_color {
+    opacity: 0.5;
+}
+.container_image:hover .overlay_image {
+    opacity: 1;
+}
+
+.description h1:hover {
+    color: hsl(var(--Cyan));
+    cursor: pointer;
+}
+
+.description .autor a:hover {
+    color: hsl(var(--Cyan));
+    cursor: pointer;
+}
+
+/* -------- Attribution -------- */
+
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
