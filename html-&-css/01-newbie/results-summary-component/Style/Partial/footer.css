@@ -1,0 +1,17 @@
+/* xxxxxxxxx Rodapé xxxxxxxxx */
+
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--pale-blue);
+    opacity: 0.5;
+}
+
+.attribution a {
+    color: var(--color-attribution);
+}

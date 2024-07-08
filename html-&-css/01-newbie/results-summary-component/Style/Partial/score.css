@@ -1,0 +1,65 @@
+/* xxxxxxxxx Score xxxxxxxxx */
+
+.score {
+    height: 350px;
+    width: 375px;
+    border-radius: 0 0 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--cor-gradiente);
+    color: var(--cor-score-text);
+}
+
+.score h1 {
+    opacity: 0.8;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.score__circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.score__total {
+    color: var(--cor-principal);
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.score__of{
+    font-weight: 500;
+    font-size: 0.9em;
+    opacity: 0.5;
+}
+
+/* .score__texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.score__great {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.score__text{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+    padding: 0 2rem;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./Style/reset.css" />
+        <link rel="stylesheet" href="./Style/index.css" />
+        <link rel="stylesheet" href="./Style/Partial/main.css" />
+        <link rel="stylesheet" href="./Style/Partial/score.css" />
+        <link rel="stylesheet" href="./Style/Partial/summary.css" />
+        <link rel="stylesheet" href="./Style/Partial/footer.css" />
+        <link rel="stylesheet" href="./Style/Partial/media.css" />
+
+        <title>Frontend Mentor | 01 - Results summary component</title>
+    </head>
+
+    <body>
+        <main>
+            <section class="container">
+                <div class="score">
+                    <h1>Your Result</h1>
+                    <div class="score__circle">
+                        <h2 class="score__total">76</h2>
+                        <p class="score__of">of 100</p>
+                    </div>
+                    <h2 class="score__great">Great</h2>
+                    <p class="score__text">
+                        You scored higher than 65% of the people who have taken
+                        these tests.
+                    </p>
+                </div>
+
+                <div class="summary">
+                    <h2 class="summary__title">Summary</h2>
+                    <div class="Reaction" id="Reaction"></div>
+                    <div class="Memory" id="Memory"></div>
+                    <div class="Verbal" id="Verbal"></div>
+                    <div class="Visual" id="Visual"></div>
+
+                    <div class="btn">
+                        <button>Continue</button>
+                    </div>
+                </div>
+
+                <!-- --------------------- Old Score --------------------- -->
+                <!-- <div id="score">
+                    <div>
+                        <h1 class="score__resultado">Your Result</h1>
+                    </div>
+
+                    <div class="score__point">
+                        <span class="score__point--part1">76</span>
+                        <span class="score__point--part2"> of 100 </span>
+                    </div>
+
+                    <div class="score__texto">
+                        <h2 class="score__texto--titulo">Great</h2>
+                        <p class="score__texto--detalhe">
+                            You scored higher than 65% of the <br />
+                            people who have taken these tests.
+                        </p>
+                    </div>
+                </div> -->
+
+                <!-- --------------------- Old Summary --------------------- -->
+                <!-- <section class="summary">
+                <h3 class="summary__titulo">Summary</h3>
+
+                <ul class="summary__tabela">
+                    <li class="summary__base summary__tabela--01">
+                        <span class="summary__image summary__t01">
+                            <img src="./assets/images/icon-reaction.svg" alt="icon-reaction" />Reaction
+                        </span>
+                        <span class="summary__pontuacao">
+                            80 <span class="porcentagem">/ 100</span>
+                        </span>
+                    </li>
+
+                    <li class="summary__base summary__tabela--02">
+                        <span class="summary__image summary__t02">
+                            <img src="./assets/images/icon-memory.svg" alt="icon-memory" />Memory
+                        </span>
+                        <span class="summary__pontuacao">
+                            92 <span class="porcentagem">/ 100</span>
+                        </span>
+                    </li>
+
+                    <li class="summary__base summary__tabela--03">
+                        <span class="summary__image summary__t03">
+                            <img src="./assets/images/icon-verbal.svg" alt="icon-verbal" />Verbal
+                        </span>
+                        <span class="summary__pontuacao">
+                            61 <span class="porcentagem">/ 100</span>
+                        </span>
+                    </li>
+
+                    <li class="summary__base summary__tabela--04">
+                        <span class="summary__image summary__t04">
+                            <img src="./assets/images/icon-visual.svg" alt="icon-visual" />Visual
+                        </span>
+                        <span class="summary__pontuacao">
+                            72 <span class="porcentagem">/ 100</span>
+                        </span>
+                    </li>
+                </ul>
+                <div class="btn">
+                    <button class="btn__efeito">Continue</button>
+                </div>
+            </section> -->
+            </section>
+        </main>
+
+        <footer class="attribution">
+            <p>
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    rel="noopener"
+                    >Frontend Mentor</a
+                >.
+            </p>
+            <p>
+                Coded by
+                <a href="https://github.com/eric-suzuki-dev"
+                    >Eric Yuji Suzuki</a
+                >
+            </p>
+        </footer>
+
+        <script type="module" src="script.js"></script>
+    </body>
+</html>

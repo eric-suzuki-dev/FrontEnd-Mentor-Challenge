@@ -1,0 +1,24 @@
+/* xxxxxxxxx Main xxxxxxxxx */
+body {
+    background: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 810px;
+}

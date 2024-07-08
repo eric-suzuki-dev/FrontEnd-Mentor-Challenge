@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    --cor-principal: #ffffff;
+    --cor-inicial: #7857ff;
+    --cor-final: #2e2be9;
+    --cor-gradiente: linear-gradient(var(--cor-inicial), var(--cor-final));
+    --cor-score-text: hsl(221, 100%, 96%);
+    --cor-escuro: black;
+    --cor-botao: hsl(224, 30%, 27%);
+    --fonte-principal: 'Hanken Grotesk', sans-serif;
+
+    /* --opacidade-tabela: 0.1; */
+    --cor-vermelho-opac: hsla(0, 100%, 67%, 0.1);
+    --cor-vermelho: hsl(0, 79%, 54%);
+    --cor-amarelo-opac: hsla(39, 100%, 56%, 0.1);
+    --cor-amarelo: hsl(39, 88%, 51%);
+    --cor-verde-opac: hsla(166, 100%, 37%, 0.1);
+    --cor-verde: hsl(166, 94%, 31%);
+    --cor-azul-opac: hsla(234, 85%, 45%, 0.1);
+    --cor-azul: hsl(234, 88%, 36%);
+
+    --cor-sombra: hsla(241, 100%, 89%, 0.473);
+}

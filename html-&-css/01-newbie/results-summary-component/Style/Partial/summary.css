@@ -1,0 +1,109 @@
+/* xxxxxxxxx summary xxxxxxxxx */
+.summary {
+    color: var(--cor-escuro);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 450px;
+    width: 310px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.summary__title {
+    text-align: left;
+    font-weight: 700;
+    margin: 24px 0 12px 0;
+    font-size: 20px;
+}
+
+/* xxxxxxxxx json xxxxxxxxx */
+#Reaction, #Memory, #Verbal, #Visual {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 280px;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+/* xxxxxxxxx summary color xxxxxxxxx */
+#Reaction {
+    background-color: var(--cor-vermelho-opac);
+}
+
+#Memory {
+    background-color: var(--cor-amarelo-opac);
+}
+
+#Verbal {
+    background-color: var(--cor-verde-opac);
+}
+
+#Visual {
+    background-color: var(--cor-azul-opac);
+}
+
+#Reaction>h3{
+    color: var(--cor-vermelho);
+}
+
+#Memory>h3 {
+    color: var(--cor-amarelo);
+}
+
+#Verbal>h3 {
+    color: var(--cor-verde);
+}
+
+#Visual>h3 {
+    color: var(--cor-azul);
+}
+
+/* xxxxxxxxx containers in summary xxxxxxxxx */
+
+.image {
+    height: 18px;
+    width: 18px;
+}
+
+.category {
+    font-size: 16px;
+    margin: 0 110px 0 15px;
+    font-weight: 700;
+}
+
+.point {
+    font-weight: 700;
+}
+
+.total {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+/* xxxxxxxxx Botão xxxxxxxxx */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    /* margin-left: 40px; */
+}
+
+button {
+    height: 60px;
+    width: 310px;
+    background-color: var(--cor-botao);
+    color: var(--cor-score-text);
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
+button:hover {
+    background: var(--cor-gradiente);
+}

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-principal: #ffffff;
+    --cor-inicial: #7857ff;
+    --cor-final: #2e2be9;
+    --cor-gradiente: linear-gradient(var(--cor-inicial), var(--cor-final));
+    --cor-score-text: hsl(221, 100%, 96%);
+    --cor-escuro: black;
+    --cor-botao: hsl(224, 30%, 27%);
+    --fonte-principal: 'Hanken Grotesk', sans-serif;
+
+    --opacidade-tabela: 0.1;
+    --cor-vermelho-opac: 0, 100%, 67%;
+    --cor-vermelho: hsl(0, 79%, 54%);
+    --cor-amarelo-opac: 39, 100%, 56%;
+    --cor-amarelo: hsl(39, 88%, 51%);
+    --cor-verde-opac: 166, 100%, 37%;
+    --cor-verde: hsl(166, 94%, 31%);
+    --cor-azul-opac: 234, 85%, 45%;
+    --cor-azul: hsl(234, 88%, 36%);
+
+    --cor-sombra: hsla(241, 100%, 89%, 0.473);
+}
+
+/* xxxxxxxxx Principal xxxxxxxxx */
+body {
+    background: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    /* height: 100%;
+    width: 100%; */
+    /* padding: 1em; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 400px; */
+    width: 375px;
+}
+/* xxxxxxxxx Pontuação xxxxxxxxx */
+
+#score {
+    height: 350px;
+    width: 375px;
+    border-radius: 0 0 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--cor-gradiente);
+    color: var(--cor-score-text);
+}
+
+.score__resultado {
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.score__point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(rgba(78, 33, 202, 0.6), rgba(78, 33, 202, 0.1));
+}
+
+.score__point--part1 {
+    color: var(--cor-principal);
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.score__point--part2 {
+    font-weight: 500;
+    font-size: 0.9em;
+    opacity: 0.5;
+}
+
+.score__texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score__texto--titulo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.score__texto--detalhe {
+    font-size: 16px;
+    margin: 10px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+/* xxxxxxxxx Tabela xxxxxxxxx */
+
+.summary {
+    color: var(--cor-escuro);
+    margin-left: 40px;
+}
+
+.summary__tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.summary__titulo {
+    font-weight: 700;
+    margin: 1.5em 0 1.5em 0;
+    font-size: 1.2em;
+}
+
+.summary__pontuacao {
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.summary__pontuacao .porcentagem {
+    opacity: 0.4;
+}
+
+.summary__base {
+    height: 50px;
+    width: 285px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.summary__image {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.summary__image img {
+    margin: 0 10px 0 10px;
+}
+
+/* xxxxxxxxx Tabela - 01 xxxxxxxxx */
+
+.summary__tabela--01 {
+    background: hsla(var(--cor-vermelho-opac), var(--opacidade-tabela));
+}
+
+.summary__t01 {
+    color: var(--cor-vermelho);
+}
+
+/* xxxxxxxxx Tabela - 02 xxxxxxxxx */
+
+.summary__tabela--02 {
+    background: hsla(var(--cor-amarelo-opac), var(--opacidade-tabela));
+}
+
+.summary__t02 {
+    color: var(--cor-amarelo);
+}
+
+/* xxxxxxxxx Tabela - 03 xxxxxxxxx */
+
+.summary__tabela--03 {
+    background: hsla(var(--cor-verde-opac), var(--opacidade-tabela));
+}
+
+.summary__t03 {
+    color: var(--cor-verde);
+}
+
+/* xxxxxxxxx Tabela - 04 xxxxxxxxx */
+
+.summary__tabela--04 {
+    background: hsla(var(--cor-azul-opac), var(--opacidade-tabela));
+}
+
+.summary__t04 {
+    color: var(--cor-azul);
+}
+
+/* xxxxxxxxx Botão xxxxxxxxx */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.btn__efeito {
+    height: 60px;
+    width: 285px;
+    border-radius: 30px;
+    color: var(--cor-score-text);
+    background: var(--cor-botao);
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
+.btn__efeito:hover {
+    background: var(--cor-gradiente);
+}
+
+/* xxxxxxxxx Rodapé xxxxxxxxx */
+
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--pale-blue);
+    opacity: 0.5;
+}
+
+.attribution a {
+    color: var(--color-attribution);
+}
+
+/* xxxxxxxxx Responsivo 1440px xxxxxxxxx */
+
+@media (min-width: 750px) {
+    .summary {
+        width: 285px;
+        grid-area: summary;
+        padding-right: 40px;
+    }
+
+    .btn {
+        grid-area: btn;
+        padding-right: 40px;
+    }
+
+    .attribution {
+        grid-area: attribution;
+        padding-right: 40px;
+        padding-bottom: 15px;
+    }
+
+    #score {
+        grid-area: score;
+        height: 510px;
+        width: 370px;
+        border-radius: 10% 10% 10% 10%;
+    }
+
+    .score__point {
+        height: 220px;
+        width: 220px;
+        gap: 0px;
+    }
+
+    .score__resultado {
+        font-size: 24px;
+    }
+
+    .score__point--part1 {
+        font-size: 80px;
+    }
+
+    .score__texto--titulo {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        display: grid;
+        grid-template:
+            'score summary'
+            'score summary'
+            'score btn'
+            'score attribution';
+        box-shadow: 30px 30px 50px 0px var(--cor-sombra);
+        border-radius: 50px;
+        height: 510px;
+        width: 740px;
+    }
+}
