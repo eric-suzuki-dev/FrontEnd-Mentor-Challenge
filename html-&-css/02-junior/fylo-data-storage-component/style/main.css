@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    /* ------ Color Neutral ------ */
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+
+    /* -------- Attribution -------- */
+    --color-attribution: hsl(228, 45%, 44%);
+
+    /* ------ Font ------ */
+    --font-regular: 400;
+    --font-Bold: 700;
+    --font-raleway: "Raleway", sans-serif;
+    --font-size: 14px;
+}
+
+
+/* ------ Principal ------ */
+body {
+    background: var(--very-dark-blue);
+    font-family: var(--font-raleway);
+    font-size: var(--font-size);
+    font-weight: var(--font-regular);
+    font-style: normal;
+    color: var(--pale-blue);
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------ Fylo ------ */
+.fylo {
+    background-color: var(--dark-blue);
+    width: 340px;
+    height: 210px;
+    border-radius: 15px 100px 15px 15px;
+}
+
+.fylo_logo {
+    margin: 40px 0 0 40px;
+}
+
+.fylo_logo img {
+    background-size: cover;
+    height: 40px;
+    width: 135px;
+}
+
+.fylo_file {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 35px 0 0 40px;
+}
+
+.fylo_file div {
+    background-color: var(--very-dark-blue);
+    height: 48px;
+    width: 48px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fylo_file img {
+    width: 25px;
+    height: auto;
+}
+
+/* ------ Storage ------ */
+.storage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-blue);
+    width: 340px;
+    height: 160px;
+    border-radius: 15px;
+    margin-top: 16px;
+}
+
+/* ------ Tect ------ */
+.storage .text {
+    margin: 35px 0 16px 0;
+}
+
+.storage .text span {
+    font-weight: var(--font-Bold);
+}
+
+/* ------ Guage ------ */
+.storage .guage {
+    position: relative;
+    height: 18px;
+    width: 260px;
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+}
+
+.storage .guage .count {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 14px;
+    width: 195px;
+    background: var(--gradient);
+    border-radius: 16px;
+}
+
+.storage .guage .circle {
+    position: absolute;
+    top: 3px;
+    left: 183px;
+    height: 12px;
+    width: 12px;
+    background: var(--pale-blue);
+    border-radius: 50%;
+}
+
+/* ------ GB ------ */
+.storage .gb {
+    width: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-weight: var(--font-Bold);
+}
+
+/* ------ Pop-up ------ */
+.pop-up {
+    position: relative;
+}
+
+.pop-up .pop-up_balloon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 80px;
+    width: 180px;
+    background-color: white;
+    border-radius: 10px;
+    top: 60px;
+    left: -89px;
+}
+
+.pop-up .pop-up_balloon b {
+    font-size: 36px;
+    font-weight: var(--font-Bold);
+    color: var(--very-dark-blue);
+}
+
+.pop-up .pop-up_balloon p {
+    text-transform: uppercase;
+    font-weight: var(--font-Bold);
+    color: var(--grayish-blue);
+    margin-left: 10px;
+}
+
+
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--pale-blue);
+}
+
+.attribution a {
+    color: var(--color-attribution);
+}
+
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 930px) {
+    body {
+        background-image: url(../images/bg-desktop.png);
+        background-size: 100% 425px;
+        background-position: bottom;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .storage {
+        width: 540px;
+        margin: 50px 0 0 30px;
+    }
+
+    .storage .text{
+        margin-right: 230px;
+    }
+
+    .storage .guage {
+        width: 460px;
+    }
+
+    .storage .guage .count {
+        width: 340px;
+    }
+
+    .storage .guage .circle {
+        left: 328px;
+    }
+
+    .storage .gb{
+        width: 460px;
+    }
+
+    .pop-up .pop-up_balloon {
+        height: 75px;
+        top: -115px;
+        left: 50px;
+        border-radius: 10px 10px 0 10px;
+    }
+
+    .pop-up_arrow{
+        position: absolute;
+        width: auto;
+        height: auto;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid white;
+        transform: rotate(180deg);
+        top: 75px;
+        left: 160px;
+    }
+
+}
