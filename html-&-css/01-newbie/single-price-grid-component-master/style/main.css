@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    /* ------ Color Neutral ------ */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: hsl(0, 100%, 100%);
+
+    /* ------ Font ------ */
+    --font-principal: 'Karla', sans-serif;
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-size: 16px;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+}
+
+/* ------ Principal ------ */
+body {
+    background: var(--light-gray);
+    font-size: var(--font-size);
+    font-weight: var(--font-regular);
+    font-family: var(--font-principal);
+
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text,
+.price,
+.credit {
+    box-shadow: 5px 5px 30px var(--grayish-blue);
+}
+
+/* ------ Text ------ */
+.text {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    height: 200px;
+    width: 260px;
+    padding: 35px 25px;
+    border-radius: 5px 5px 0 0;
+}
+
+.text h1,
+h2 {
+    font-weight: var(--font-bold);
+}
+
+.text h1 {
+    color: var(--cyan);
+    font-size: 20px;
+}
+
+.text h2 {
+    color: var(--bright-yellow);
+    margin-top: 30px;
+}
+
+.text p {
+    color: var(--grayish-blue);
+    margin-top: 25px;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+/* ------ Price ------ */
+.price {
+    display: flex;
+    flex-direction: column;
+    background: var(--cyan);
+    color: var(--light-gray);
+    height: 180px;
+    width: 260px;
+    padding: 25px 25px;
+    font-weight: var(--font-regular);
+}
+
+.price h3 {
+    font-size: 20px;
+}
+
+.price .dollar {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+}
+
+.dollar h4 {
+    font-size: 30px;
+}
+
+.dollar p {
+    opacity: 0.5;
+    margin-left: 16px;
+}
+
+.fullAccess {
+    margin-top: 16px;
+}
+
+.price button {
+    color: var(--light-gray);
+    background: var(--bright-yellow);
+    font-weight: var(--font-bold);
+    border: none;
+    height: 50px;
+    width: 260px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.price h3,
+h4 {
+    font-weight: var(--font-bold);
+}
+
+/* ------ Credit ------ */
+.credit {
+    display: flex;
+    flex-direction: column;
+    background: var(--cyan);
+    color: var(--light-gray);
+    height: 180px;
+    width: 260px;
+    padding: 25px 25px;
+    opacity: 0.8;
+    border-radius: 0 0 5px 5px;
+}
+
+.credit h5 {
+    font-size: 18px;
+    font-weight: var(--font-bold);
+}
+
+.credit ul {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 22px;
+    opacity: 0.8;
+}
+
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
+
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 650px) {
+    .container {
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: row;
+        height: 480px;
+        width: 640px;
+    }
+
+    .text {
+        height: 130px;
+        width: 550px;
+        padding: 40px 45px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .text h1 {
+        font-size: 23px;
+    }
+
+    .text h2 {
+        font-size: 18px;
+    }
+
+    .text p {
+        margin-top: 14px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .price {
+        height: 180px;
+        width: 240px;
+        padding: 40px 40px;
+        border-radius: 0 0 0 5px;
+    }
+
+    .price button {
+        width: 240px;
+    }
+
+    .credit {
+        height: 180px;
+        width: 240px;
+        padding: 40px 40px;
+        border-radius: 0 0 5px 0;
+    }
+
+}
