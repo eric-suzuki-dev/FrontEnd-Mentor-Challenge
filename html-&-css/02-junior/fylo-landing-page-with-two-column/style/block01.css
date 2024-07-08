@@ -1,0 +1,42 @@
+/* ------ Block 01 ------ */
+
+.block_01 {
+    height: 630px;
+    width: 375px;
+    margin-top: 98px;
+}
+
+/* ------ Block 01 img ------ */
+
+.block_01 img {
+    height: 230px;
+    width: auto;
+}
+
+/* ------ Block 01 text ------ */
+
+.block_01 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_01 .text h1 {
+    height: 100px;
+    width: 310px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 34px;
+    font-weight: var(--font-bold);
+    margin-top: 44px;
+}
+
+.block_01 .text p {
+    width: 290px;
+    height: 80px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 30px;
+}

@@ -1,0 +1,144 @@
+/* ------ Block 02 ------ */
+
+.block_02 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 930px;
+    width: 375px;
+    margin-top: 120px;
+    background-color: #FAF8FE;
+}
+
+/* ------ Block 01 img ------ */
+
+.block_02 img {
+    height: 240px;
+    width: auto;
+    position: relative;
+    z-index: 3;
+}
+
+.block_02 .back {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 30px;
+    width: 375px;
+    z-index: 1;
+}
+
+/* ------ Block 02 text ------ */
+.block_02-set {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.block_02-set .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_02-set .text h2 {
+    height: 18px;
+    width: 275px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: var(--font-bold);
+    margin-top: 94px;
+}
+
+.block_02-set .text span {
+    height: 140px;
+    width: 335px;
+    text-align: left;
+    margin-top: 28px;
+}
+
+.block_02-set .text p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* ------ Block 02 link_arrow ------ */
+
+.block_02-set .link_arrow {
+    display: flex;
+    justify-content: center;
+    color: var(--moderate-cyan);
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+.block_02-set .link_arrow img {
+    height: 12px;
+    width: 12px;
+    margin-left: 5px;
+}
+
+.block_02-set .link_arrow a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+}
+
+/* ------ Block 02 review ------ */
+
+.block_02-set .review {
+    width: 280px;
+    height: 170px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 45px;
+    margin-bottom: 82px;
+}
+
+.block_02-set .comment img {
+    height: 12px;
+    width: 12px;
+    margin: 20px 0 10px 30px;
+}
+
+.block_02-set .comment p {
+    height: 60px;
+    width: 240px;
+    margin-left: 30px;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.block_02-set .avatar {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0 0 30px;
+}
+
+.block_02-set .avatar img {
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+}
+
+.block_02-set .avatar .avatar-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.block_02-set .avatar .avatar-name h3 {
+    font-size: 11px;
+    font-weight: var(--font-bold);
+}
+
+.block_02-set .avatar .avatar-name p {
+    font-family: var(--font-Raleway);
+    font-size: 8px;
+    margin-top: 5px;
+}

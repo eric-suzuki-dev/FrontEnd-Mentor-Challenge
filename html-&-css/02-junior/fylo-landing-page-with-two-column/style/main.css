@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth@75..100&family=Raleway:wght@100..900&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    /* ------ Accent ------ */
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    /* ------ Color Neutral ------ */
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+
+    /* -------- Attribution -------- */
+    --color-attribution: hsl(228, 45%, 44%);
+
+    /* ------ Font ------ */
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-Raleway: "Raleway", sans-serif;
+    --font-Open-Sans: "Open Sans", sans-serif;
+    --font-size: 16px;
+    --font-style: normal;
+}
+
+
+/* ------ Principal ------ */
+body {
+    background: white;
+    font-family: var(--font-Open-Sans);
+    font-size: var(--font-size);
+    font-weight: var(--font-regular);
+    font-style: var(--font-style);
+    color: var(--very-dark-blue);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+}
+
+/* ------ Block ------ */
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: auto;
+}
+
+/* ------ Email and Button ------ */
+
+.block_email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_01 .block_email {
+    margin-top: 48px;
+}
+
+.block_03 .block_email {
+    margin-top: 18px;
+}
+
+.block_email input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.block_email input::placeholder {
+    color: var(--light-gray);
+    padding-left: 20px;
+}
+
+.button-01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-01 button {
+    width: 300px;
+    height: 40px;
+    background-color: var(--bright-blue);
+    border-radius: 5px;
+    border: none;
+    color: var(--light-grayish-blue);
+    font-family: var(--font-Open-Sans);
+    font-weight: var(--font-bold);
+    margin: 10px 0 0 0;
+}
+
+.button-01 .check {
+    font-family: var(--font-Open-Sans);
+    text-align: left;
+    width: 100%;
+    color: red;
+    opacity: 0.5;
+    display: none;
+}
+
+/* ------ Email and Button:hover ------ */
+.button-01 button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.block_email input:focus~.button-01 .check {
+    display: block;
+}
+
+.block_email input:focus {
+    border-color: red;
+    outline: none;
+    opacity: 0.5;
+}
+
+/* .button-01 button:hover~.check {
+    display: block;
+} */
+
+/* .button-01 button:hover~.check,
+.button-01 button:hover~.check+button,
+.button-01 button:hover~.check~input {
+    border-color: red;
+    opacity: 0.5;
+    outline: none;
+} */
+
+/* .block_email button:hover+input {
+    border-color: red;
+    opacity: 0.5;
+} */

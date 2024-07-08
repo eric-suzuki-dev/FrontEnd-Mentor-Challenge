@@ -1,0 +1,288 @@
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 1440px) {
+
+    /* ------ Principal ------ */
+    .container {
+        width: 1440px;
+    }
+
+    .block {
+        width: 1440px;
+    }
+
+    .block_email {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .block_email input {
+        width: 320px;
+        height: 40px;
+    }
+
+    .button-01 button {
+        width: 200px;
+        height: 45px;
+        margin: 0 0 0 15px;
+    }
+
+    .block_01 .block_email {
+        margin-top: 28px;
+    }
+
+    .button-01 {
+        position: relative;
+    }
+
+    .button-01 .check {
+        position: absolute;
+        top: 55px;
+        left: -325px;
+    }
+
+    /* ------ Header ------ */
+    .header-top {
+        height: 52px;
+        width: 1285px;
+        margin: 63px 77px 0 77px;
+    }
+
+    .header-top img {
+        height: 52px;
+        width: auto;
+    }
+
+    .header-top .links {
+        width: 275px;
+    }
+
+    /* ------ Block 01 ------ */
+    .block_01 {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 480px;
+        width: 1440px;
+        margin-top: 80px;
+    }
+
+    .block_01 img {
+        height: 480px;
+    }
+
+    .capsule {
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+    }
+
+    .block_01 .text h1 {
+        width: 600px;
+        font-size: 38px;
+        text-align: left;
+        line-height: 58px;
+        margin-top: 95px;
+    }
+
+    .block_01 .text p {
+        width: 600px;
+        height: 65px;
+        text-align: left;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 28px;
+    }
+
+    /* ------ Block 02 ------ */
+    .block_02 {
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 665px;
+        width: 100vw;
+        margin-top: 285px;
+    }
+
+    .block_02 img {
+        height: 410px;
+    }
+
+    .block_02 .back {
+        background-image: url(../images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        top: -120px;
+        left: 0;
+        height: 120px;
+        width: 100vw;
+    }
+
+    .block_02-set {
+        align-items: flex-start;
+        margin: 0 85px 0 80px;
+    }
+
+    .block_02-set .text {
+        align-items: flex-start;
+    }
+
+    .block_02-set .text h2 {
+        height: 40px;
+        width: 660px;
+        font-size: 40px;
+        text-align: left;
+        margin-top: 65px;
+    }
+
+    .block_02-set .text span {
+        height: 110px;
+        width: 520px;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .block_02-set .text p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .block_02-set .link_arrow {
+        height: 30px;
+        width: 170px;
+        margin-top: 20px;
+    }
+
+    .block_02-set .link_arrow a {
+        font-size: 16px;
+    }
+
+    .block_02-set .review {
+        width: 360px;
+        height: 220px;
+        margin-top: 40px;
+        margin-bottom: 105px;
+    }
+
+    .block_02-set .comment img {
+        height: 15px;
+        width: 15px;
+        margin: 25px 0 15px 35px;
+    }
+
+    .block_02-set .comment p {
+        height: 85px;
+        width: 295px;
+        margin-left: 35px;
+        font-size: 13.5px;
+        line-height: 22px;
+    }
+
+    .block_02-set .avatar {
+        margin: 20px 0 0 35px;
+    }
+
+    .block_02-set .avatar img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .block_02-set .avatar .avatar-name {
+        margin-left: 15px;
+    }
+
+    .block_02-set .avatar .avatar-name h3 {
+        font-size: 13px;
+    }
+
+    .block_02-set .avatar .avatar-name p {
+        font-size: 9px;
+    }
+
+    /* ------ Block 03 ------ */
+    .block_03 {
+        justify-content: center;
+        flex-direction: row;
+        height: 320px;
+        width: 100vw;
+    }
+
+    .block_03 .text {
+        height: 130px;
+        width: 520px;
+        margin: 0px 240px 0 80px;
+        text-align: left;
+    }
+
+    .block_03 .text h4 {
+        font-size: 32px;
+    }
+
+    .block_03 .text p {
+        font-size: 17px;
+        margin-top: 18px;
+        line-height: 28px;
+    }
+
+    .block_03 .block_email {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .block_03 .block_email .button-01 button {
+        width: 200px;
+        height: 45px;
+        margin: 25px 0;
+    }
+
+    .block_03 .block_email input {
+        width: 480px;
+    }
+
+    .block_03 .block_email .button-01 .check {
+        position: absolute;
+        top: 5px;
+        left: 0px;
+    }
+
+    /* ------ Block 01 ------ */
+
+    .block_04 {
+        height: 400px;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .block_04 .flyo .f-logo {
+        margin: 105px 0 0 0px;
+    }
+
+    /* .flyo-contact,
+    .flyo-email {
+        margin-left: 80px;
+    } */
+
+    .flyo-contact {
+        margin-top: 25px;
+    }
+
+    .aboutUS a,
+    .contactUs a {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .aboutUS {
+        margin-top: 185px;
+        margin-left: 220px;
+    }
+
+    .contactUs {
+        margin-top: 185px;
+        margin-left: 185px;
+    }
+
+    .social {
+        margin: 185px 0 0 185px;
+    }
+}

@@ -1,0 +1,27 @@
+/* ------ Block 03 ------ */
+.block_03 {
+    display: flex;
+    justify-content: flex-start;
+    height: 345px;
+    width: 375px;
+    background-color: var(--desaturated-blue);
+}
+
+.block_03 .text {
+    height: 120px;
+    width: 300px;
+    margin-top: 58px;
+    color: white;
+    text-align: center;
+}
+
+.block_03 .text h4 {
+    font-size: 18px;
+    font-weight: var(--font-bold);
+}
+
+.block_03 .text p {
+    font-size: 14px;
+    margin-top: 18px;
+    line-height: 22px;
+}

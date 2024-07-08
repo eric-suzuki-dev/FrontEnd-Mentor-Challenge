@@ -1,0 +1,29 @@
+/* ------ Header ------ */
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    width: 325px;
+    margin: 23px 25px 0;
+}
+
+.header-top img {
+    height: 25px;
+    width: 80px;
+}
+
+.header-top .links {
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-Raleway);
+   gap: 0 16px;
+}
+
+.header-top .links a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--very-dark-blue);
+}

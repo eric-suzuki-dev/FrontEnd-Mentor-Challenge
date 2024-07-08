@@ -1,0 +1,85 @@
+/* ------ Block 01 ------ */
+
+.block_04 {
+    height: 680px;
+    width: 375px;
+    background-color: var(--very-dark-blue);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.block_04 .flyo .f-logo {
+    height: 50px;
+    width: 180px;
+    margin: 70px 0 0 40px;
+}
+
+.flyo-contact,
+.flyo-email img {
+    height: 18px;
+    width: 18px;
+}
+
+.flyo-contact,
+.flyo-email {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 18px;
+    width: 230px;
+    /* margin-left: 40px; */
+}
+
+.flyo-contact p,
+.flyo-email p {
+    margin-left: 20px;
+}
+
+.flyo-contact {
+    margin-top: 40px;
+}
+
+.flyo-email {
+    margin-top: 20px;
+}
+
+.aboutUS a,
+.contactUs a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 40px;
+
+}
+
+.aboutUS a:nth-child(2),
+.aboutUS a:nth-child(3),
+.aboutUS a:nth-child(4) {
+    margin-top: 20px;
+}
+
+.contactUs a:nth-child(2),
+.contactUs a:nth-child(3) {
+    margin-top: 20px;
+}
+
+.aboutUS,
+.contactUs {
+    margin-top: 60px;
+}
+
+.social img {
+    height: 27px;
+    width: 27px;
+}
+
+.social img:nth-child(2),
+.social img:nth-child(3) {
+    margin-left: 10px;
+}
+
+.social {
+    margin: 50px 0 0 135px;
+}
