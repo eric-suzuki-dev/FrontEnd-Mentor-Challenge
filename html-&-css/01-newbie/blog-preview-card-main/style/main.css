@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --yellow: hsl(47, 88%, 63%);
+
+    /* ------ Color Neutral ------ */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+
+    /* ------ Font ------ */
+    --font-principal: 'Figtree', sans-serif;
+    --font-semi: 600;
+    --font-extra: 800;
+    --font-size: 16px;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+}
+
+/* ------ Principal ------ */
+body{
+    background: var(--yellow);
+    font-size: var(--font-size);
+    font-weight: var(--font-semi);
+    font-family: var(--font-principal);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ------ Conteúdo ------ */
+.container{
+    height: 450px;
+    width: 280px;
+    background: var(--white);
+    padding: 25px;
+    border: 2px solid var(--black);
+    border-radius: 30px;
+    box-shadow: 5px 5px var(--black);
+}
+
+/* ------ Imagem ------ */
+.imagem{
+    background-image: url(../assets/images/illustration-article.svg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+/* ------ Card ------ */
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2{
+background: var(--yellow);
+height: 26px;
+width: 74px;
+font-weight: var(--font-extra);
+font-size: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+}
+
+.card span{
+    font-size: 13px;
+    margin-top: 14px;
+}
+
+.card h3{
+    font-size: 18px;
+    font-weight: var(--font-extra);
+    margin-top: 18px;
+}
+
+.card p {
+    color: var(--grey);
+    font-size: 14px;
+    margin-top: 18px;
+    line-height: 24px;
+}
+
+/* ------ Avatar ------ */
+.avatar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.avatar img{
+    height: 32px;
+    width: 32px;
+}
+
+.avatar p{
+    font-size: 14px;
+    font-weight: var(--font-extra);
+    margin-left: 15px;
+}
+
+/* ------ Hover ------ */
+.card h3:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
+
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 376px){
+    .container {
+        height: 470px;
+        width: 335px;
+    }
+
+    .card h2{
+        height: 30px;
+        width: 80px;
+        font-size: 14px;
+    }
+ 
+    .card span{
+        font-size: 14px;
+    }
+
+    .card h3{
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .card p {
+        font-size: 15.5px;
+        margin-top: 20px;
+    }
+
+    .avatar{
+        margin-top: 20px;
+    }
+    
+    .avatar p{
+        font-size: 14px;
+    }
+}
