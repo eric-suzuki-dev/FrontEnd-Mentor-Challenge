@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --strong-cyan-dark: hsl(171, 66%, 34%);
+    --light-blue-dark: hsl(233, 100%, 59%);
+
+    /* ------ Color Neutral ------ */
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --white: hsl(0, 100%, 100%);
+
+    /* -------- Attribution -------- */
+    --color-attribution: hsl(228, 45%, 44%);
+
+    /* ------ Font ------ */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
+    --font-size: 16px;
+    --font-style: normal;
+}
+
+
+/* ------ Principal ------ */
+body {
+    background: var(--white);
+    font-family: var(--font-bai-jamjuree);
+    font-size: var(--font-size);
+    font-weight: var(--font-regular);
+    font-style: var(--font-style);
+    color: var(--grayish-blue);
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------ Block ------ */
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    padding: 0 32.5px;
+}
+
+.first {
+    margin-top: 125px;
+}
+
+/* ------ Text ------ */
+.block .text {
+    text-align: center;
+}
+
+.block .text h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark-grayish-blue);
+    font-weight: var(--font-semi-bold);
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.block .text p {
+    line-height: 26px;
+    margin-top: 26px;
+}
+
+.first .text {
+    margin-top: 75px;
+}
+
+.third .text p {
+    margin-top: 20px;
+}
+
+.third .text div {
+    margin-top: 60px;
+}
+
+.fourth {
+    margin: 200px 0 30px 0;
+}
+
+.fifth {
+    margin-bottom: 65px;
+}
+
+.sixth {
+    margin-bottom: 180px;
+}
+
+/* ------ Image ------ */
+.first img {
+    height: 125px;
+    width: 125px;
+}
+
+.third img {
+    height: 240px;
+    width: 310px;
+    margin-top: 70px;
+}
+
+.fourth img {
+    height: 180px;
+    width: 310px;
+    margin: 70px 0 140px 0;
+}
+
+.fifth img {
+    margin: 60px 0 50px 0;
+}
+
+.sixth img {
+    margin-top: 70px;
+}
+
+/* ------ Button ------ */
+.download {
+    width: 310px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px 0 170px 0;
+}
+
+.btn {
+    width: 310px;
+    height: 55px;
+    border-radius: 25px;
+    border: none;
+    color: var(--white);
+    font-weight: var(--font-semi-bold);
+    font-size: 18px;
+}
+
+.green {
+    background-color: var(--strong-cyan);
+    border-bottom: 3px solid var(--strong-cyan-dark);
+}
+
+.purple {
+    background-color: var(--light-blue);
+    border-bottom: 3px solid var(--light-blue-dark);
+}
+
+/* ------ Footer ------ */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    color: var(--dark-grayish-blue);
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer img {
+    height: 55px;
+    width: 55px;
+    margin-bottom: 10px;
+}
+
+.itens {
+    margin-bottom: 50px;
+}
+
+.itens li {
+    margin-top: 40px;
+}
+
+.social img {
+    height: 25px;
+    width: 25px;
+    margin: 0 20px;
+}
+
+/* ------ Hover ------ */
+.btn:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--pale-blue);
+}
+
+.attribution a {
+    color: var(--color-attribution);
+}
+
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 1100px) {
+
+    /* ------ Principal ------ */
+    body {
+        background-image: url(../images/bg-header-mobile.png);
+        font-size: 20px;
+    }
+
+    /* ------ Block ------ */
+    .block {
+        padding: unset;
+        width: 690px;
+    }
+
+    .third {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 890px;
+    }
+
+    /* ------ Text ------ */
+    .block .text h1,
+    h2,
+    /* h3, */
+    h4,
+    h5,
+    h6 {
+        font-size: 44px;
+        /* line-height: 38px; */
+    }
+
+    .third .text {
+        text-align: left;
+        margin-left: 110px;
+        /* margin-top: 20px; */
+    }
+
+    .third .text h3 {
+        font-size: 26px;
+    }
+
+    .third .text p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .third .text div {
+        margin-top: 40px;
+    }
+
+    .fourth {
+        margin: 160px 0 30px 0;
+    }
+
+    .fifth {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1100px;
+        margin-bottom: 85px;
+    }
+
+    .fifth h5 {
+        font-size: 26px;
+    }
+
+    .fifth p {
+        font-size: 16px;
+    }
+
+    .fifth .text {
+        width: 350px;
+    }
+
+    .sixth {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1100px;
+        margin-bottom: 170px;
+    }
+
+    /* ------ Button ------ */
+    .download {
+        width: 470px;
+        height: 55px;
+        flex-direction: row;
+        margin: 50px 0 160px 0;
+    }
+
+    .btn {
+        width: 225px;
+        height: 55px;
+    }
+
+    /* ------ Image ------ */
+
+    .third div img {
+        height: 570px;
+        width: auto;
+        margin-left: -320px;
+        margin-top: 80px;
+    }
+
+    .fourth img {
+        height: 470px;
+        width: 810px;
+        margin: 120px 0 175px 0;
+    }
+
+    .sixth img {
+        margin-top: 85px;
+    }
+
+    /* ------ Footer ------ */
+    footer {
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        width: 100%;
+        font-size: 16px;
+        text-align: left;
+        padding: 0;
+    }
+
+    footer img {
+        margin-bottom: 0;
+    }
+
+    .footer_block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 1100px;
+
+    }
+
+    .itens {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        width: 480px;
+        height: 60px;
+    }
+
+    .itens li {
+        margin-top: 0;
+    }
+
+    .itens li:nth-child(2),
+    .itens li:nth-child(4) {
+        margin-top: 25px;
+    }
+
+    .social img {
+        height: 25px;
+        width: 25px;
+        margin: 0 20px;
+    }
+
+}
