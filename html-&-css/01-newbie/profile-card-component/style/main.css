@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* ------ Color Neutral ------ */
+    --dark-gray: hsl(0, 0%, 59%);
+
+    /* ------ Fonte ------ */
+    --font-principal: 'Kumbh Sans', sans-serif;
+    --font-m: 18px;
+    --font-w-normal: 400;
+    --font-w-bold: 700;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+}
+
+/* ------ Principal ------ */
+body {
+    background: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-position: -350px -300px, 200px 350px;
+    background-repeat: no-repeat;
+    background-size: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    font-family: var(--font-principal);
+    font-size: var(--font-m);
+}
+
+hr {
+    opacity: 0.5;
+}
+
+/* ------ Conteúdo ------ */
+.container {
+
+    background: white;
+    height: 375px;
+    width: 325px;
+    border-radius: 15px;
+}
+
+/* ------ Imagem ------ */
+.image_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-size: cover;
+    width: 100%;
+    height: 138px;
+    border-radius: 15px 15px 0 0;
+}
+
+.avatar {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 140px;
+    border: 5px solid white;
+}
+
+/* ------ Date ------ */
+.date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+.date h1 {
+    font-weight: var(--font-w-bold);
+    color: var(--very-dark-desaturated-blue);
+
+}
+
+.date span {
+    font-weight: var(--font-w-bold);
+    color: var(--dark-gray);
+    margin-left: 10px;
+}
+
+.date p {
+    order: 2;
+    margin: 15px 100px 15px 100px;
+    font-weight: var(--font-w-bold);
+    color: var(--dark-gray);
+    font-size: 16px;
+}
+
+/* ------ Score ------ */
+.score{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.score h2{
+color: var(--very-dark-desaturated-blue);
+font-weight: var(--font-w-bold);
+font-size: 20px;
+}
+
+.score p {
+    color: var(--dark-gray);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.follow, .like, .photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    /* color: var(--very-dark-cyan); */
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
+
+/* ------ Responsivo 376px ------ */
+@media only screen and (min-width: 376px){
+    body{
+        background-size: 52rem;
+        background-position: -5% 400%, 120% -250%;
+    }
+}
