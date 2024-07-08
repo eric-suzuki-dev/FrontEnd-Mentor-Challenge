@@ -1,0 +1,77 @@
+/* ------ Block_02 ------ */
+.block_02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 2105px;
+    width: auto;
+}
+
+.block_02 img {
+    background-size: contain;
+    height: 195px;
+    width: auto;
+    margin-top: 80px;
+}
+
+.block_02 p {
+    font-size: 15px;
+    margin: 20px 40px 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.grow,
+.flowing,
+.your {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    height: 555px;
+}
+
+.grow {
+    background-image: url(../images/bg-section-top-mobile-1.svg), url(../images/bg-section-bottom-mobile-1.svg);
+    background-size: auto, auto;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 110px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.your {
+    background-image: url(../images/bg-section-top-mobile-2.svg), url(../images/bg-section-bottom-mobile-2.svg);
+    background-size: auto, auto;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+.flowing{
+    margin-bottom: 120px;
+}
+
+.flowing img{
+    margin-top: 135px;
+}
+
+h2,
+h3,
+h4 {
+    color: var(--very-dark-cyan);
+    font-family: var(--font-Poppins);
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 85px;
+}

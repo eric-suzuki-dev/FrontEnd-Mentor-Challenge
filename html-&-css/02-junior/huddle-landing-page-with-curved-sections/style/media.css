@@ -1,0 +1,263 @@
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 600px) {
+
+    /* ------ main ------ */
+    .container {
+        width: 1440px;
+    }
+
+
+    /* ------ button ------ */
+    button {
+        height: 80px;
+        width: 400px;
+        border-radius: 40px;
+        font-size: 20px;
+    }
+
+    .subscribe button {
+        position: absolute;
+        left: 200px;
+        top: 5px;
+        font-size: 18px;
+    }
+
+
+    /* ------ Block_01 ------ */
+    .block_01 {
+        width: 1440px;
+        height: 1544px;
+    }
+
+
+    /* ------ Header ------ */
+    header {
+        height: 196px;
+    }
+
+    header img {
+        height: 38px;
+        margin: 0px 80px;
+    }
+
+    header div {
+        height: 40px;
+        width: 138px;
+        border-radius: 20px;
+        font-size: 16px;
+        line-height: 36px;
+        margin: 0px 62px;
+    }
+
+
+    /* ------ Build ------ */
+    .build h1 {
+        font-size: 46px;
+        line-height: unset;
+        padding: 0 220px;
+        text-align: center;
+        margin-top: 165px;
+    }
+
+    .build p {
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        padding: 0 425px;
+        margin-top: 32px;
+    }
+
+    .build img {
+        height: auto;
+        width: 1018px;
+        margin-top: 120px;
+    }
+
+
+    /* ------ Score ------ */
+    .score {
+        flex-direction: row;
+        justify-content: center;
+        height: 380px;
+        width: 1440px;
+    }
+
+    .score img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .score div {
+        padding: 0 170px;
+    }
+
+    .score span {
+        font-size: 86px;
+        margin-top: 20px;
+    }
+
+    .score p {
+        font-size: 20px;
+        margin-top: 45px;
+    }
+
+
+    /* ------ Block_02 ------ */
+    .block_02 {
+        height: 2310px;
+        width: 1440px;
+        margin-top: 50px;
+    }
+
+    .block_02 img {
+        height: auto;
+        width: 510px;
+        margin-top: 70px;
+    }
+
+    .block_02 p {
+        margin: 25px 0 0;
+        text-align: left;
+        line-height: 26px;
+    }
+
+    .grow h2,
+    .grow p {
+        padding: 0 140px 0 125px;
+    }
+
+    .flowing h3,
+    .flowing p {
+        padding: 0 150px 0 130px;
+    }
+
+    .your h4,
+    .your p {
+        padding: 0 120px 0 140px;
+    }
+
+    .inter {
+        flex-direction: row-reverse;
+        height: 530px;
+    }
+
+    .your .inter {
+        height: 480px;
+    }
+
+    .grow {
+        background-image: url(../images/bg-section-top-desktop-1.svg), url(../images/bg-section-bottom-desktop-1.svg);
+        padding-top: 164px;
+        padding-bottom: 138px;
+    }
+
+    .grow img {
+        padding-right: 160px;
+    }
+
+    .flowing img {
+        padding-left: 140px;
+    }
+
+    .your img {
+        padding-right: 130px;
+    }
+
+    .your {
+        background-image: url(../images/bg-section-top-desktop-2.svg), url(../images/bg-section-bottom-desktop-2.svg);
+        padding-top: 154px;
+        padding-bottom: 135px;
+    }
+
+    .flowing {
+        flex-direction: row;
+        height: 685px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-size: 40px;
+        text-align: left;
+    }
+
+
+    /* ------ Ready ------ */
+    .ready {
+
+        width: 1440px;
+        height: 512px;
+        padding-bottom: unset;
+    }
+
+    h5 {
+        line-height: unset;
+        font-size: 44px;
+    }
+
+
+    /* ------ Block_03 ------ */
+    .block_03 {
+        background-image: url(../images/bg-footer-top-desktop.svg);
+        padding-top: 157px;
+        width: 1440px;
+    }
+
+    .block_03 .inter {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 555px;
+        padding: 0 118px;
+    }
+
+    /* ------ news ------ */
+    .news {
+        margin-top: 100px;
+        margin-left: 290px;
+    }
+
+    .news h6 {
+        margin-top: 20px;
+    }
+
+    .news p {
+        width: 340px;
+        margin-top: 30px;
+    }
+
+    /* ------ subscribe ------ */
+    .subscribe {
+        position: relative;
+        margin-top: 40px;
+    }
+
+    /* ------ huddle ------ */
+
+    .huddle img {
+        width: 240px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .huddle p {
+        width: 300px;
+    }
+
+
+    .phone {
+        background-image: url(../images/icon-phone.svg);
+        margin-top: 30px;
+    }
+
+    .email {
+        background-image: url(../images/icon-email.svg);
+        margin-top: 20px;
+    }
+
+    .social img {
+        margin-top: 80px;
+        height: 34px;
+        width: 34px;
+    }
+}

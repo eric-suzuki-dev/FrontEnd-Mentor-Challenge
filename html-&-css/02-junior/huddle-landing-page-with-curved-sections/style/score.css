@@ -1,0 +1,34 @@
+/* ------ Score ------ */
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 440px;
+    width: 100vw;
+}
+
+.score img {
+    width: 30px;
+    height: 30px;
+}
+
+.score div {
+    display: flex;
+    flex-direction: column;
+}
+
+.score span {
+    color: var(--very-dark-cyan);
+    font-weight:var(--font-bold);
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.score p {
+    font-weight: var(--font-semi-bold);
+    color: rgb(148, 148, 148);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+}

@@ -1,0 +1,20 @@
+/* ------ Ready ------ */
+.ready {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 300px;
+    padding-bottom: 175px;
+}
+
+h5 {
+    color: var(--very-dark-cyan);
+    font-family: var(--font-Poppins);
+    font-weight: var(--font-bold);
+    text-align: center;
+    line-height: 36px;
+    font-size: 24px;
+    padding: 0 65px;
+}
