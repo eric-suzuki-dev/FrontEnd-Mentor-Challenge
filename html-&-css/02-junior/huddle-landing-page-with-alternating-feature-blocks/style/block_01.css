@@ -1,0 +1,72 @@
+/* ------ header ------ */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 16px 0;
+}
+
+header img {
+    height: 17px;
+    width: auto;
+}
+
+header div {
+    background-color: white;
+    color: var(--very-dark-cyan);
+    font-weight: var(--font-bold);
+    font-size: 10px;
+    height: 24px;
+    width: 96px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 24px;
+    box-shadow: 1px 3px 10px var(--grayish-blue);
+}
+
+/* ------ Block_01 ------ */
+.block_01 {
+    height: 718px;
+    background-color: var(--very-pale-cyan);
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--very-dark-cyan);
+    margin-bottom: 20px;
+}
+
+/* ------ Build ------ */
+.build {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.build h1 {
+    font-family: var(--font-Poppins);
+    font-weight: var(--font-semi-bold);
+    font-size: 22px;
+    line-height: 34px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.build p {
+    padding: 25px 0px 30px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.build div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 85px 35px 0;
+}
+
+.build img {
+    height: 210px;
+    width: 300px;
+    margin-top: 55px;
+}

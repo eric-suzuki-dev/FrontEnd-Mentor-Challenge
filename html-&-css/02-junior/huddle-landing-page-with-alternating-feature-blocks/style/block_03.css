@@ -1,0 +1,89 @@
+/* ------ Block_03 ------ */
+.block_03 {
+    background-color: var(--very-dark-cyan);
+    height: 850px;
+    color: var(--very-pale-cyan);
+}
+
+/* ------ Description_01 ------ */
+
+.description_01 {
+    margin-top: 140px;
+    padding-left: 15px;
+}
+
+.description_01 img {
+    height: 25px;
+    width: 165px;
+    filter: grayscale(100%) brightness(1000%) contrast(1000%);
+}
+
+.maps {
+    background-image: url(../images/icon-location.svg);
+    background-size: 14px 19px;
+    padding-right: 20px;
+}
+
+.phone {
+    background-image: url(../images/icon-phone.svg);
+    background-size: 18px 20px;
+}
+
+.email {
+    background-image: url(../images/icon-email.svg);
+    background-size: 22px 17px;
+}
+
+.maps,
+.phone,
+.email {
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    padding-left: 40px;
+    margin-top: 25px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+/* ------ Description_02 and 03 ------ */
+.description_02 {
+    margin-top: 60px;
+}
+
+.description_03 {
+    margin-top: 30px;
+}
+
+.description_02,
+.description_03 {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 22px;
+    padding-left: 15px;
+}
+
+.description_02 a,
+.description_03 a {
+    text-decoration: none;
+    color: var(--very-pale-cyan);
+}
+
+/* ------ Description_04 ------ */
+.description_04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.social img {
+    height: 32px;
+    width: auto;
+    margin-left: 5px;
+}
+
+.description_04 p {
+    font-size: 12px;
+    margin-top: 25px;
+}

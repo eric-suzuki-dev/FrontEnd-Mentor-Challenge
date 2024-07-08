@@ -1,0 +1,205 @@
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 1440px) {
+
+    /* ------ main ------ */
+    .container {
+        width: 1440px;
+    }
+
+    /* ------ button ------ */
+    button {
+        height: 60px;
+        width: 280px;
+        border-radius: 30px;
+    }
+
+    .float button {
+        width: 400px;
+        height: 80px;
+        border-radius: 40px;
+        margin-top: 38px;
+        font-size: 20px;
+    }
+
+    /* ------ Block_01 ------ */
+    .block_01 {
+        width: 1440px;
+        height: 720px;
+        background-image: url(../images/bg-hero-desktop.svg);
+        margin-bottom: 0px;
+    }
+
+    /* ------ Header ------ */
+    header {
+        padding: 50px 80px 0;
+    }
+
+    header img {
+        height: 32px;
+        width: 200px;
+    }
+
+    header div {
+        font-size: 16px;
+        height: 48px;
+        width: 200px;
+        border-radius: 24px;
+        line-height: 48px;
+    }
+
+    /* ------ Build ------ */
+    .build {
+        flex-direction: row;
+    }
+
+    .build h1 {
+        font-size: 39.5px;
+        line-height: 60px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .build p {
+        height: 74px;
+        padding: 0;
+        text-align: left;
+        font-size: 17.5px;
+        line-height: 24px;
+        margin: 26px 0 35px;
+    }
+
+    .build div {
+        align-items: flex-start;
+        padding: 0 80px 0 80px;
+        width: 515px;
+        height: 310px;
+        margin-top: 75px;
+    }
+
+    .build img {
+        height: auto;
+        width: 680px;
+        margin-top: 70px;
+        margin-right: 90px;
+    }
+
+
+    /* ------ Block_02 ------ */
+    .block_02 {
+        height: 1905px;
+        width: 1440px;
+    }
+
+    .block_02 img {
+        height: auto;
+        width: 410px;
+        padding: 55px 30px;
+    }
+
+    .block_02 p {
+        font-size: 18px;
+        padding: 20px 0 0;
+        text-align: left;
+        line-height: 26px;
+    }
+
+    .block_02 .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 505px;
+        height: 135px;
+        margin: 0 0 0 115px;
+    }
+
+    .grow,
+    .flowing,
+    .your {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 1230px;
+        height: 440px;
+    }
+
+    .grow {
+        margin-top: 160px;
+    }
+
+    .flowing {
+        flex-direction: row;
+    }
+
+    .flowing .text {
+        margin: 0 30px 0 0;
+    }
+
+    h2,
+    h3,
+    h4 {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    /* ------ Float ------ */
+    .float {
+        justify-content: flex-start;
+        width: 805px;
+        height: 280px;
+        top: 2440px;
+    }
+
+    h5 {
+        font-size: 32px;
+        margin-top: 75px;
+    }
+
+    /* ------ Block_03 ------ */
+    .block_03 {
+        display: flex;
+        flex-direction: row;
+        height: 560px;
+        width: 1440px;
+    }
+
+    .description_01 {
+        margin-top: 190px;
+        padding-left: 120px;
+    }
+
+    .description_01 img {
+        height: 40px;
+        width: 240px;
+    }
+
+    .maps {
+        margin-top: 40px;
+        width: 330px;
+        padding-right: 0;
+    }
+
+    .description_02,
+    .description_03,
+    .description_04 {
+        margin-top: 280px;
+        padding: 0;
+    }
+
+    .description_02 {
+        margin-left: 145px;
+    }
+
+    .description_03 {
+        margin-left: 115px;
+    }
+
+    .description_04 {
+        margin-left: 140px;
+        align-items: flex-start;
+    }
+
+    .description_04 p {
+        margin-top: 180px;
+    }
+}

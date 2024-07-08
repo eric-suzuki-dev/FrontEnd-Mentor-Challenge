@@ -1,0 +1,21 @@
+/* ------ Float ------ */
+.float {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 355px;
+    height: 175px;
+    border-radius: 25px;
+    box-shadow: 1px 3px 10px var(--grayish-blue);
+    top: 2440px;
+    z-index: 10;
+}
+
+h5 {
+    color: var(--very-dark-cyan);
+    font-family: var(--font-Poppins);
+    font-weight: var(--font-semi-bold);
+}
