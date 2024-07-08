@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    /* ------ Color Neutral ------ */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* -------- Attribution -------- */
+    --color-attribution: hsl(228, 45%, 44%);
+
+    /* ------ Font ------ */
+    --font-medium: 500;
+    --font-semiBold: 600;
+    --font-barlow: "Barlow Semi Condensed", sans-serif;
+    --font-size: 13px;
+}
+
+
+/* ------ Principal ------ */
+body {
+    background: var(--light-grayish-blue);
+    font-family: var(--font-barlow);
+    font-size: var(--font-size);
+    font-weight: var(--font-medium);
+    color: var(--white);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 375px;
+}
+
+/* ------ card ------ */
+
+.card {
+    border-radius: 10px;
+    width: 330px;
+}
+
+.card .text {
+    padding: 0 38px;
+}
+
+.card .text p {
+    opacity: 70%;
+    padding-top: 20px;
+    line-height: 16px;
+}
+
+.card .text span {
+    text-align: left;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: var(--font-semiBold);
+}
+
+.card img {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+
+.card-3,
+.card-5 {
+    color: var(--very-dark-grayish-blue);
+}
+
+/* ------ card presentation ------ */
+.card .presentation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 0 20px 30px;
+}
+
+.card .name {
+    margin-left: 15px;
+}
+
+.card .name sub {
+    font-size: 11px;
+    opacity: 50%;
+}
+
+/* ------ card 1-2-3-4-5 v2------ */
+.card-1 {
+    background-color: var(--moderate-violet);
+    height: 450px;
+    margin: 70px 22.5px 30px;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 25px) 0;
+}
+
+.card-1 .text p {
+    opacity: 50%;
+}
+
+.card-2 {
+    background-color: var(--very-dark-grayish-blue);
+    height: 240px;
+    margin: 30px 22.5px;
+}
+
+.card-3 {
+    background-color: var(--white);
+    height: 230px;
+    margin: 30px 22.5px;
+}
+
+.card-4 {
+    background-color: var(--very-dark-blackish-blue);
+    height: 380px;
+    margin: 30px 22.5px;
+}
+
+.card-5 {
+    background-color: var(--white);
+    height: 450px;
+    margin: 0px 22.5px 70px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5 {
+    box-shadow: 20px 20px 50px rgba(153, 153, 153, 0.4);
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.attribution a {
+    color: var(--color-attribution);
+}
+
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 1150px) {
+    main {
+        height: 100vh;
+    }
+
+    .container{
+        flex-direction: row;
+        height: 585px;
+        width: 1150px;
+    }
+
+    .card .text p {
+        line-height: 18px;
+    }
+
+    .block-upper, .block-lower{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-1{
+        height: 290px;
+        width: 550px;
+        margin: 0 15px 12.5px 0;
+        background-position: calc(100% - 90px) 0;
+    }
+
+    .card-2{
+        height: 290px;
+        width: 260px;
+        margin: 0 20px 12.5px;
+    }
+
+    .card-3{
+        height: 270px;
+        width: 260px;
+        margin: 12.5px 15px 0 0 ;
+    }
+
+    .card-4{
+        height: 270px;
+        width: 555px;
+        margin: 12.5px 20px 0 15px;
+    }
+
+    .card-5{
+        height: 585px;
+        width: 260px;
+        margin: 0 0 0 20px;
+    }
+}
