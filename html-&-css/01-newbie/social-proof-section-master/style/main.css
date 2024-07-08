@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* ------ Color Neutral ------ */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    /* ------ Font ------ */
+    --font-principal: 'League Spartan', sans-serif;
+    --font-r-w: 400;
+    --font-m-w: 500;
+    --font-b-w: 700;
+    --font-size: 15px;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+}
+
+/* ------ Principal ------ */
+body {
+    background: var(--white);
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: 50% 0%, 50% 100%;
+    background-repeat: no-repeat;
+    font-family: var(--font-principal);
+    font-size: var(--font-size);
+    font-weight: var(--font-r-w);
+    color: var(--dark-grayish-magenta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* ------ Conteúdo ------ */
+.container {
+    height: 1530px;
+    width: 351px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+.title_text {
+    margin: 80px 24px 46px;
+    text-align: center;
+}
+
+.title_text h1 {
+    font-size: 32px;
+    font-weight: var(--font-b-w);
+    color: var(--very-dark-magenta);
+    margin: 0 44px 26px;
+}
+
+.title_text p {
+    font-size: 16px;
+    font-weight: var(--font-m-w);
+    line-height: 26px;
+}
+
+/* ------ Star ------ */
+.star {
+    height: 262px;
+    width: 350px;
+}
+
+.star li {
+    background-color: var(--light-grayish-magenta);
+    border-radius: 15px;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star li:not(:last-child) {
+    margin-bottom: 17px;
+}
+
+.star li div {
+    height: 16px;
+    width: 84px;
+    margin: 16px 0 14px;
+    background-image: url(../images/icon-star.svg);
+    background-repeat: repeat-x;
+}
+
+.star li p {
+    color: var(--very-dark-magenta);
+    font-weight: var(--font-b-w);
+}
+
+/* ------ Card ------ */
+.card {
+    background: var(--very-dark-magenta);
+    border-radius: 10px;
+    height: 248px;
+    width: 350px;
+    color: var(--light-grayish-magenta);
+    font-weight: var(--font-m-w);
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    margin-top: 50px;
+}
+
+.second {
+    margin-top: 16px;
+}
+
+.third {
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+.card img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 38px 0 0 30px;
+}
+
+.card h2 {
+    color: var(--white);
+    margin: 43px 95px;
+    position: absolute;
+}
+
+.card h3 {
+    color: var(--soft-pink);
+    position: absolute;
+    margin: 64px 96px;
+}
+
+.card p {
+    font-size: 17px;
+    margin: 30px 36px;
+    line-height: 22px;
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
+
+/* ------ Responsivo ------ */
+
+@media only screen and (min-width: 1100px) {
+
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-position: 0% 0%, 100% 100%;
+    }
+
+    .container {
+        height: 800px;
+        width: 1100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 115px 160px 45px 160px;
+    }
+
+    .title_text {
+        all: unset;
+        grid-area: titulo;
+        height: 245px;
+        width: 415px;
+    }
+
+    .title_text h1 {
+        text-align: left;
+        margin: 0;
+        font-size: 48px;
+    }
+
+    .title_text p {
+        margin-top: 30px;
+    }
+
+    .star {
+        all: unset;
+    }
+
+    .star li {
+        width: 445px;
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .star1 {
+        margin-left: 160px;
+    }
+
+    .star2 {
+        margin-left: 210px;
+    }
+
+    .star3 {
+        margin-left: 240px;
+    }
+
+    .first {
+        margin: unset;
+    }
+
+    .second {
+        margin: 15px 0 0 25px;
+    }
+
+    .third {
+        margin: 30px 0 0 25px;
+    }
+
+}
