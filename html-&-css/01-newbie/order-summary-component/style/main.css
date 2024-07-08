@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --pale-blue: 225, 100%, 94%;
+    --bright-blue: 245, 75%, 52%;
+
+    /* ------ Color Neutral ------ */
+    --very-pale-blue: 225, 100%, 98%;
+    --desaturated-blue: 224, 23%, 55%;
+    --dark-blue: 223, 47%, 23%;
+    --white: 0, 0%, 100%;
+
+    /* ------ Fonte ------ */
+    --font-principal: 'Red Hat Display', sans-serif;
+    --font-m: 1rem;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+}
+
+/* ------ Principal ------ */
+
+body {
+    background: hsl(var(--pale-blue));
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% 35%;
+    font-family: var(--font-principal);
+    font-size: var(--font-m);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ------ Conteúdo ------ */
+.container {
+    width: 20.3125rem;
+    height: 35.5625rem;
+    background: hsl(var(--white));
+    border-radius: 20px;
+}
+
+/* ------ Imagem ------ */
+.container_image {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    background-image: url(../images/illustration-hero.svg);
+    background-size: contain;
+    border-radius: 20px 20px 0 0;
+}
+
+/* ------ Descrição ------ */
+
+.description {
+    margin: 2.2rem 1.8rem 1.3rem;
+    text-align: center;
+}
+
+.description h1 {
+    font-size: 1.375rem;
+    font-weight: 900;
+    color: hsl(var(--dark-blue));
+}
+
+.description p {
+    margin-top: 1.4rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: hsl(var(--desaturated-blue));
+}
+
+/* ------ Bloco de Preço ------ */
+.content_plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(var(--very-pale-blue));
+    height: 5rem;
+    margin: 0 1.5rem;
+    border-radius: 20px;
+}
+
+.content_plan div {
+    height: 48px;
+    width: 48px;
+    background-image: url(../images/icon-music.svg);
+}
+
+.content_price h2 {
+    font-size: 0.875rem;
+    font-weight: 900;
+    color: hsl(var(--dark-blue));
+    margin-bottom: 0.5rem;
+}
+
+.content_price p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: hsl(var(--desaturated-blue));
+}
+
+.content_plan a {
+    font-size: 0.75rem;
+    font-weight: 900;
+    color: hsl(var(--bright-blue));
+}
+
+/* ------ Botão ------ */
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_pay {
+    background: hsl(var(--bright-blue));
+    color: hsl(var(--white));
+    font-weight: 900;
+    height: 3.125rem;
+    width: auto;
+    border: none;
+    border-radius: 10px;
+    margin: 1.8rem 1.5rem 0.6rem;
+    box-shadow: 0 15px 10px hsl(var(--pale-blue));
+}
+
+.btn_cancel {
+    background: transparent;
+    color: hsl(var(--desaturated-blue));
+    font-weight: 900;
+    height: 3.125rem;
+    margin: 0 1.5rem;
+    width: auto;
+    border: none;
+
+}
+
+/* ------ Hover ------ */
+.content_plan a:hover {
+    opacity: 0.5;
+}
+
+.btn_pay:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.btn_cancel:hover {
+    color: hsl(var(--dark-blue));
+    cursor: pointer;
+}
+
+/* ------ Responsivo 750px - 1440 ------ */
+@media only screen and (min-width: 750px) {
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-size: 100% 45%;
+    }
+
+    .container {
+        width: 28.125rem;
+        height: 43.75rem;
+    }
+
+    .container_image {
+        height: 13.75rem;
+    }
+
+    .description {
+        margin: 3rem 3rem 1.3rem;
+    }
+
+    .description h1 {
+        font-size: 1.875rem;
+    }
+
+    .content_plan {
+        height: 6.25rem;
+        margin: 0 2.8rem;
+    }
+
+    .content_price {
+        margin-left: -60px;
+    }
+
+    .content_price h2 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .content_price p {
+        font-size: 1rem;
+    }
+
+    .content_plan a {
+        font-size: 1rem;
+    }
+
+    .btn_pay {
+
+        margin: 2rem 2.8rem 0.6rem;
+    }
+
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
