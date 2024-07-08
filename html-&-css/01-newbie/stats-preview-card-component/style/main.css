@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+
+    /* (main background) */
+    --very-dark-blue: hsl(233, 47%, 7%);
+    /* (card background) */
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    /* (accent) */
+    --soft-violet: hsl(277, 64%, 61%);
+
+    /* ------ Color Neutral ------ */
+
+    /* (main heading, stats) */
+    --white: hsl(0, 0%, 100%);
+    /* (main paragraph) */
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (stat headings) */
+    --slightly-transparent-white-head: hsla(0, 0%, 100%, 0.6);
+
+
+    /* ------ Fonte ------ */
+    --font-principal: 'Lexend Deca', sans-serif;
+    --font-title: 'Inter', sans-serif;
+    --font-m: 0.9375rem;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+}
+
+/* ------ Principal ------ */
+body {
+    background: var(--very-dark-blue);
+    font-family: var(--font-principal);
+    font-size: var(--font-m);
+    font-weight: 400;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ------ Conteúdo ------ */
+.container {
+    height: 48.75rem;
+    width: 20.625rem;
+    background: var(--dark-desaturated-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* ------ Imagem ------ */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px 10px 0 0;
+    background: url(../images/image-header-mobile.jpg);
+    background-size: cover;
+    filter: saturate(1.2) contrast(1.1);
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--soft-violet);
+    opacity: 0.5;
+}
+
+/* ------ Descrição ------ */
+.description {
+    text-align: center;
+}
+
+.description h1 {
+    font-family: var(--font-title);
+    font-size: 28px;
+    font-weight: 700;
+    margin: 2.5rem 2rem 1rem;
+    line-height: 2rem;
+}
+
+.description span {
+    color: var(--soft-violet);
+}
+
+.description p {
+    color: var(--slightly-transparent-white);
+    margin: 0rem 2rem;
+    line-height: 1.5rem;
+    font-family: var(--font-title);
+}
+
+/* ------ Pontuação ------ */
+.score {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.score span {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.score li {
+    margin-top: 2rem;
+}
+
+.score p {
+    color: var(--slightly-transparent-white-head);
+    font-size: 12px;
+    margin-top: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.score li:nth-child(3) {
+    text-transform: uppercase;
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
+
+/* ------ Responsivo 1440px ------ */
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 69.375rem;
+        height: 28rem;
+        display: grid;
+        grid-template-areas:
+            'description banner'
+            'score banner';
+    }
+
+    .banner {
+        background: url(../images/image-header-desktop.jpg);
+        height: 100%;
+        width: 33.75rem;
+        border-radius: 0 10px 10px 0;
+        grid-area: banner;
+    }
+
+    .banner::after {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .description {
+        grid-area: description;
+        margin: 0 6rem 0 2rem;
+    }
+
+    .description h1 {
+        font-size: 36px;
+        text-align: left;
+        line-height: 3rem;
+        margin: 2rem 2rem 2rem;
+    }
+
+    .description p {
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+    .score {
+        grid-area: score;
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+        margin: 0 5rem 2rem 2rem;
+
+    }
+}
