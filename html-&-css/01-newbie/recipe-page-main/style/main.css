@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    /* ------ Color Neutral ------ */
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    /* ------ Font ------ */
+    --font-regular: 400;
+    --font-semiBold: 600;
+    --font-bold: 700;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-young: 'Young Serif', serif;
+    --font-size: 16px;
+}
+
+/* ------ Principal ------ */
+body {
+    background: var(--white);
+    font-size: var(--font-size);
+    font-weight: var(--font-regular);
+    color: var(--dark-charcoal);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 375px;
+}
+
+hr {
+    margin: 36px 0;
+    width: 100%;
+}
+
+/* ------ Imagem ------ */
+.imagem {
+    background-image: url(../assets/images/image-omelette.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 375px;
+    height: 175px;
+}
+
+/* ------ Card ------ */
+.card {
+    width: 315px;
+    padding: 0 30px;
+}
+
+/* ------ omelette ------ */
+.omelette {
+    width: 215px;
+    width: 315px;
+    margin-top: 48px;
+}
+
+.omelette h1 {
+    font-family: var(--font-young);
+    font-weight: var(--font-regular);
+    font-size: 36px;
+}
+
+.omelette p {
+    font-family: var(--font-outfit);
+    font-weight: var(--font-regular);
+    color: var(--wenge-brown);
+    margin-top: 25px;
+    line-height: 24px;
+}
+
+/* ------ preparation ------ */
+.preparation {
+    height: 150px;
+    width: 265px;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 45px;
+    background-color: var(--rose-white);
+    font-family: var(--font-outfit);
+}
+
+
+.preparation h2 {
+    font-weight: var(--font-bold);
+    font-size: 18px;
+    color: var(--dark-raspberry);
+}
+
+.preparation ul {
+    list-style-type: disc;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: var(--dark-raspberry);
+}
+
+.preparation ul li p {
+    color: var(--wenge-brown);
+    margin-right: 25px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.preparation b {
+    font-weight: var(--font-bold);
+}
+
+/* ------ ingredients ------ */
+.ingredients {
+    width: 315px;
+    height: 230px;
+    font-family: var(--font-outfit);
+    color: var(--wenge-brown);
+}
+
+.ingredients h3 {
+    font-size: 30px;
+    font-family: var(--font-young);
+    font-weight: var(--font-regular);
+    color: var(--nutmeg);
+    margin-top: 40px;
+}
+
+.ingredients ul {
+    list-style-type: disc;
+    margin-top: 30px;
+    padding-left: 20px;
+    color: var(--nutmeg);
+}
+
+.ingredients ul li p {
+    color: var(--wenge-brown);
+    margin-bottom: 12px;
+    line-height: 20px;
+}
+
+
+/* ------ instructions ------ */
+.instructions {
+    height: 670px;
+    width: 315px;
+    font-family: var(--font-outfit);
+}
+
+.instructions h4 {
+    font-size: 30px;
+    font-family: var(--font-young);
+    font-weight: var(--font-regular);
+    color: var(--nutmeg);
+}
+
+.instructions ol {
+    list-style-type: decimal;
+    color: var(--nutmeg);
+
+    font-weight: var(--font-semiBold);
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.instructions ol li p {
+    color: var(--wenge-brown);
+    font-weight: var(--font-regular);
+    margin-left: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+.instructions ol li p b {
+    font-weight: var(--font-bold);
+}
+
+/* ------ nutrition ------ */
+.nutrition {
+    height: 350px;
+    width: 100%;
+    font-family: var(--font-outfit);
+    font-weight: var(--font-regular);
+}
+
+.nutrition h5 {
+    font-size: 30px;
+    font-family: var(--font-young);
+    font-weight: var(--font-regular);
+    color: var(--nutmeg);
+}
+
+.nutrition p {
+    color: var(--wenge-brown);
+    margin: 30px 0px 15px 0;
+    padding-right: 20px;
+    line-height: 24px;
+}
+
+.nutrition table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    /* border-spacing: 2px; */
+    /* border-color: rgb(233, 0, 0); */
+    color: var(--wenge-brown);
+    padding-bottom: 45px;
+}
+
+.nutrition table tr td {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--dark-charcoal);
+}
+
+.nutrition table tr td:first-child {
+    padding-left: 30px;
+}
+
+.nutrition table tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition table tr td b {
+    font-weight: var(--font-bold);
+    color: var(--nutmeg);
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.attribution a {
+    color: var(--dark-raspberry);
+}
+
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 740px) {
+    body{
+        background: var(--eggshell);
+    }
+
+    main{
+        height: 100%;
+    }
+
+    .container{
+        background: var(--white);
+        width: 660px;
+        height: 1720px;
+        padding: 50px 40px;
+        border-radius: 25px;
+    }
+
+    .imagem{
+        height: 310px;
+        width: 660px;
+        background-size: cover;
+        border-radius: 15px;
+    }
+
+    .card{
+        width: 100%;
+        height: 1340px;
+        padding: unset;
+    }
+
+    .omelette{
+        height: 110px;
+        width: 100%;
+    }
+
+    .preparation{
+        height: 140px;
+        margin-top: 40px;
+    }
+
+    .ingredients{
+        height: 210px;
+        width: 100%;
+    }
+
+    .preparation{
+        width: 610px;
+    }
+
+    .instructions{
+        width: 660px;
+        height: 340px;
+    }
+
+    .instructions ol li p {
+   
+        line-height: 20px;
+    }
+
+}
