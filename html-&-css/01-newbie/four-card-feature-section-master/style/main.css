@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* ------ Color Neutral ------ */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    /* ------ Font ------ */
+    --font-principal: 'Poppins', sans-serif;
+    --font-light: 200;
+    --font-regular: 400;
+    --font-bold: 600;
+    --font-size: 15px;
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+}
+
+/* ------ Principal ------ */
+body {
+    background: var(--very-light-gray);
+    font-size: var(--font-size);
+    font-weight: var(--font-regular);
+    font-family: var(--font-principal);
+    color: var(--grayish-blue);
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------ Title ------ */
+.title {
+    height: 155px;
+    width: 310px;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 90px;
+}
+
+.title h1,
+.title h2 {
+    color: var(--very-dark-blue);
+    font-size: 25px;
+}
+
+.title h1 {
+    font-weight: var(--font-light);
+}
+
+.title h2 {
+    font-weight: var(--font-bold);
+    margin-top: 18px;
+}
+
+.title p {
+    margin-top: 22px;
+}
+
+/* ------ Card ------ */
+.card {
+    position: relative;
+    height: 165px;
+    width: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -7px var(--grayish-blue);
+}
+
+.card h2 {
+    font-weight: var(--font-bold);
+    color: var(--very-dark-blue);
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: 12px;
+}
+
+.card img {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.supervisor {
+    border-top: 4px solid var(--cyan);
+    margin-top: 80px;
+}
+
+.team {
+    border-top: 4px solid var(--red);
+}
+
+.karma {
+    border-top: 4px solid var(--orange);
+}
+
+.calculator {
+    border-top: 4px solid var(--blue);
+    margin-bottom: 80px;
+}
+
+.team,
+.karma,
+.calculator {
+    margin-top: 25px;
+}
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
+
+/* ------ Responsivo ------ */
+@media only screen and (min-width: 1110px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; */
+        display: grid;
+        grid-template-areas:
+            'title title title'
+            'left top right'
+            'left below right';
+    }
+
+    .title {
+        transform: scale(1.5);
+        width: 505px;
+        padding: 0 300px;
+        grid-area: title;
+        margin-bottom: 70px;    
+    }
+
+    .title p {
+        transform: scale(0.7);
+    }
+
+    .card {
+        transform: scale(1.12);
+        margin: unset;
+    }
+
+    .card h2,
+    .card p {
+        transform: scale(0.9);
+    }
+
+    .supervisor {
+        grid-area: left;
+        margin-right: 30px;
+    }
+
+    .team {
+        grid-area: top;
+    }
+
+    .karma {
+        grid-area: below;
+        margin-top: 60px;
+    }
+
+    .calculator {
+        grid-area: right;
+        margin-left: 30px;
+    }
+}
