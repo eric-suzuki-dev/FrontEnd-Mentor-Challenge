@@ -1,0 +1,178 @@
+ /* ------ smartphone ------ */
+.smartphone{
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 505px;
+    width: 247px;
+    border-radius: 30px;
+    /* background-color: aqua; */
+}
+
+ /* ------ display ------ */
+.display {
+    display: flex;
+    flex-direction: column;
+    height: 484px;
+    width: 228px;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+ /* ------ header ------ */
+header {
+    background: linear-gradient(to left, var(--light-magenta), var(--light-violet));
+
+    height: 67px;
+    width: 228px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 20px;
+    background-color: var(--white);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-weight: var(--font-bold);
+    font-size: 16px;
+    display: block;
+}
+
+.info span {
+    font-size: 12px;
+    color: var(--pale-violet);
+}
+
+.menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ /* ------ chat ------ */
+.chat {
+    flex-grow: 1;
+    padding: 15px;
+    /* overflow-y: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.question {
+    background: var(--white);
+    align-self: flex-start;
+    color: var(--very-dark-desaturated-violet);
+}
+
+.response {
+    background: var(--light-grayish-violet);
+    align-self: flex-end;
+    color: var(--very-dark-desaturated-violet);
+    text-align: right;
+}
+
+.photo {
+    display: flex;
+    gap: 5px;
+}
+
+.photo img {
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+ /* ------ booking ------ */
+.booking {
+    background: var(--light-grayish-violet);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #E0E0E0;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--very-light-magenta);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.option input {
+    margin-right: 5px;
+}
+
+.option label {
+    flex-grow: 1;
+}
+
+ /* ------ message-input ------ */
+.message-input {
+    display: flex;
+    border-top: 1px solid #E0E0E0;
+    padding: 10px;
+}
+
+.message-input input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.message-input button {
+    background: var(--very-dark-desaturated-violet-bg);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.message-input img{
+    height: 12px;
+    width: auto;
+}
+
+.message-input input:focus {
+    outline: none;
+}
+
+.message-input button:focus {
+    outline: none;
+}

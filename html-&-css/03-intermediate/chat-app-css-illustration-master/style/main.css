@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+
+    /* ------ Text ------ */
+    /*(sub-heading at the top of the app UI)*/
+    --pale-violet: hsl(276, 100%, 81%);
+    /* (chat on the left) */
+    --moderate-violet: hsl(276, 55%, 52%);
+    /* (chat on the right) */
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    /* (placeholder text) */
+    --grayish-blue: hsl(206, 6%, 79%);
+    /* (main heading) */
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    /* (paragraph) */
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+
+
+    /* ------ Gradients ------ */
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+
+
+    /* -------- Secondary -------- */
+    --white: hsl(0, 0%, 100%);
+    /* (app background) */
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    /* (submit button background) */
+    --very-dark-desaturated-violet-bg: hsl(271, 36%, 24%);
+    /* (radio button outline) */
+    --very-light-magenta: hsl(289, 100%, 72%);
+
+
+    /* ------ Font ------ */
+    --font-regular: 400;
+    --font-semi-bold: 500;
+    --font-bold: 700;
+    --font-rubik: "Rubik", sans-serif;
+    --font-size: 16px;
+}
+
+/* ------ Main ------ */
+body {
+    font-family: var(--font-rubik);
+    font-size: var(--font-size);
+    font-weight: var(--font-regular);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    background-color: rgb(50, 22, 153);
+}
