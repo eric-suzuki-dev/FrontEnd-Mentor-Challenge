@@ -57,12 +57,37 @@ main {
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 375px;
     height: 936px;
+}
+
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    width: 188px;
+    height: 500px;
+    z-index: -1;
+}
+
+.container::before {
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, var(--light-magenta), var(--light-violet));
+    border-radius: 0 0 375px 0;
+}
+
+.container::after {
+    bottom: 0;
+    right: 0;
+    background-color: var(--light-grayish-violet);
+    border-radius: 375px 0 0 0;
+    filter: brightness(97%);
 }
 
 .simple {
@@ -70,7 +95,7 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 640px;
     padding: 0 36px;
 }
 
@@ -83,5 +108,5 @@ main {
 .simple p {
     color: var(--dark-grayish-violet);
     margin-top: 30px;
-    line-height: 30px;
+    line-height: 28px;
 }
