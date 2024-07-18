@@ -1,0 +1,118 @@
+/* ------ animation ------ */
+
+.anima {
+    transform: translateY(310px);
+    animation: moveUp 20s forwards;
+    position: relative;
+}
+
+.one,
+.two,
+.three,
+.four {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(310px);
+    }
+
+    5% {
+        transform: translateY(271.25px);
+    }
+
+    10% {
+        transform: translateY(232.5px);
+    }
+
+    15% {
+        transform: translateY(193.75px);
+    }
+
+    20% {
+        transform: translateY(155px);
+    }
+
+    25% {
+        transform: translateY(116.25px);
+    }
+
+    30% {
+        transform: translateY(77.5px);
+    }
+
+    35% {
+        transform: translateY(38.75px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes showOne {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes showTwo {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes showThree {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes showFour {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.one {
+    animation: showOne 1s forwards 1s;
+}
+
+.two {
+    animation: showTwo 1s forwards 5s;
+}
+
+.three {
+    animation: showThree 1s forwards 10s;
+}
+
+.four {
+    animation: showFour 1s forwards 15s;
+}
